@@ -1,7 +1,7 @@
 ARG BUILD_PLATFORM=linux/amd64
 ARG TARGET_PLATFORM=linux/amd64
 
-FROM --platform=${BUILD_PLATFORM} golang:1.25-alpine@sha256:aee43c3ccbf24fdffb7295693b6e33b21e01baec1b2a55acc351fde345e9ec34 AS builder
+FROM --platform=${BUILD_PLATFORM} golang:1.25-alpine@sha256:f4622e3bed9b03190609db905ac4b02bba2368ba7e62a6ad4ac6868d2818d314 AS builder
 ARG COMPILE_GOOS=linux
 ARG COMPILE_GOARCH=amd64
 ARG COMPILE_GOARM=""
